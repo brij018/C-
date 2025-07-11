@@ -3,7 +3,6 @@
 #include <string>
 using namespace std;
 
-// Template class
 template <typename T>
 class MemoryCalculate {
 
@@ -12,18 +11,15 @@ class MemoryCalculate {
     string name;
 
     public:
-    // Constructor to initialize id and name
     MemoryCalculate(T i, string n) {
         id = i;
         name = n;
     }
 
-    // Method to display student details
     void display() {
         cout << "ID: " << id << ", Name: " << name << endl;
     }
-
-    // Getter for id
+    
     T getId() {
         return id;
     }
